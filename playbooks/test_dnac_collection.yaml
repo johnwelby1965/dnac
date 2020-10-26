@@ -2,6 +2,7 @@
 - name: Test DNAC Collection
   hosts: localhost
   gather_facts: false
+  connection: local
 
   collections:
     - wwt.ansible_dnac
@@ -15,5 +16,3 @@
         name: nj-Site
         site_type: area
         validate_certs: false
-
-
