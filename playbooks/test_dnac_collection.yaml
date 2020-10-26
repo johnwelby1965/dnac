@@ -1,6 +1,6 @@
 ---
 - name: Test DNAC Collection
-  hosts: sandboxdnac.cisco.com
+  hosts: https://sandboxdnac.cisco.com
   gather_facts: false
   connection: local
 
