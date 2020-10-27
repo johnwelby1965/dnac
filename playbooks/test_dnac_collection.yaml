@@ -10,10 +10,10 @@
   tasks:
     - name: Create a Site
       dnac_site:
-        delegate_to: localhost
         host: "{{ dnac.hostname }}"
         username: "{{ dnac.username }}"
         password: "{{ dnac.password }}"
         name: nj-Site
         site_type: area
         validate_certs: false
+      delegate_to: localhost
