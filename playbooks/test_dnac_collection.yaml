@@ -10,6 +10,7 @@
   tasks:
     - name: Create a Site
       dnac_site:
+        delegate_to: localhost
         host: "{{ dnac.hostname }}"
         username: "{{ dnac.username }}"
         password: "{{ dnac.password }}"
